@@ -84,15 +84,18 @@
       显示
     </button>
     <POPUPBOX :msg="msg" :listss="listss"/>
+    <EXERCISE />
   </div>
 </template>
 
 <script>
 import POPUPBOX from './popUpBox/index.vue'
+import EXERCISE from './exercise'
 export default {
   name: 'HelloWorld',
   components: {
-    POPUPBOX
+    POPUPBOX,
+    EXERCISE
   },
   data () {
     return {
